@@ -1,0 +1,95 @@
+.our-team {
+  background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.our-team__title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
+}
+.box-position {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+.box-position__title {
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+  @include font(16px, 500);
+  line-height: 1.19;
+}
+.box-position__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+}
+.social-list__link {
+  @extend %align;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--basic-bg-color);
+  fill: var(--social-icon-color);
+  transition: background-color var(--transition-dur-fun), fill var(--transition-dur-fun);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--basic-bg-color);
+  }
+}
+.our-team__item {
+  text-align: center;
+  background-color: var(--basic-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .our-team__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .our-team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .our-team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .our-team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .our-team__item {
+    text-align: center;
+    width: 270px;
+    background-color: var(--basic-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .box-position {
+    padding: 30px;
+  }
+}

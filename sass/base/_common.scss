@@ -1,0 +1,33 @@
+body {
+  background-color: var(--basic-bg-color);
+  color: var(--basic-text-color);
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.list {
+  list-style: none;
+}
+.button {
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+}
